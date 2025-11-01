@@ -34,6 +34,8 @@
 
 		<fmt.version>2.29</fmt.version>
 		<googlejavaformat.version>1.27.0</googlejavaformat.version>
+
+		<fmt.skip>false</fmt.skip>
 	</properties>
 
 	<dependencies>
@@ -133,6 +135,9 @@
 						</goals>
 					</execution>
 				</executions>
+				<configuration>
+					<skip>${fmt.skip}</skip>
+				</configuration>
 				<dependencies>
 					<dependency>
 						<groupId>com.google.googlejavaformat</groupId>

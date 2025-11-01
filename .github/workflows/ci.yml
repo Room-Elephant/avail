@@ -17,7 +17,12 @@ jobs:
           java-version: '25'
           distribution: 'adopt'
           cache: maven
+
       - name: Build
-        run: mvn -B clean compile -D skipTests
+        run: mvn -B clean compile -DskipTests -Dfmt.skip=true
+
+      - name: checkstyle
+        run: mvn fmt:check
+
       - name: Test
-        run: mvn -B verify
+        run: mvn -B test -Dfmt.skip=true
