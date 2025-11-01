@@ -8,8 +8,6 @@ import org.springframework.boot.test.context.SpringBootTest;
 @AutoConfigureTestDatabase
 class AvailServiceApplicationTests {
 
-	@Test
-	void contextLoads() {
-	}
-
+  @Test
+  void contextLoads() {}
 }
