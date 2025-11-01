@@ -1,11 +1,11 @@
 package com.roomelephant.avail;
 
 import org.junit.jupiter.api.Test;
+import org.springframework.boot.test.autoconfigure.jdbc.AutoConfigureTestDatabase;
 import org.springframework.boot.test.context.SpringBootTest;
-import org.springframework.context.annotation.Import;
 
-@Import(TestcontainersConfiguration.class)
 @SpringBootTest
+@AutoConfigureTestDatabase
 class AvailServiceApplicationTests {
 
 	@Test
