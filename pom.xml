@@ -33,7 +33,7 @@
 		<java.version>25</java.version>
 
 		<fmt.version>2.29</fmt.version>
-		<googlejavaformat.version>1.27.0</googlejavaformat.version>
+		<googlejavaformat.version>1.31.0</googlejavaformat.version>
 
 		<fmt.skip>false</fmt.skip>
 	</properties>
